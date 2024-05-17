@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      display: grid;
+      width: 760px;  
+      height: 760px;
+      background-color: #F0F1EC;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows:  1fr 1fr 1fr 1.5fr 1fr;
+    }
+    .red{
+      background-color: #E72F24;
+      height: 414px;
+      width: 320px;
+      grid-row-end: span 2;
+      border-right: 10px solid;
+      border-bottom: 10px solid;
+    }
+    .white{
+      background-color: #F0F1EC;
+      height: 310px;
+      width: 363px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      border: 10px solid;
+      margin-top: -10px;
+    }
+    .white2{
+      background-color: #F0F1EC;
+      height: 309px;
+      width: 330px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: -3;
+      border-bottom: 10px solid;
+    }
+    .blue{
+      background-color: #004592;
+      width: 50px;
+      height: 130PX;
+      grid-column-start: 3;
+      grid-row-start: 3;
+      border-top: 10px solid;
+      margin-top: -10px;
+      border-bottom: 10px solid;
+      border-bottom: 10px solid;
+    } 
+    .yellow{
+      height: 20px;
+      width: 198px;
+      background-color: #F9D01E;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column-end: 4;
+      grid-column-start: 2;
+      z-index: 1;
+      border-left: 10px solid;
+      border-right: 10px solid;
+    }
+    .black{
+      background-color: #232629;
+      height: 20px;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column-end: 2;
+      grid-column-start: 3;
+      border-left: 10px solid;
+      border-right: 10px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red box"></div>
+    <div class="white box"></div>
+    <div class="white2 box"></div>
+    <div class="blue box"></div>
+    <div class="yellow box"></div>
+    <div class="black box"></div>
+  </div>
+</body>
+
+</html>
